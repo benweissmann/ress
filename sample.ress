@@ -1,0 +1,13 @@
+
+body do
+    font_size 12.px
+    background_color :green
+    color "#000"
+    color rgb(1,2,3)
+
+    +s('.foo') do // body.foo
+    end
+
+    s('.bar') do // body .bar
+    end
+end
