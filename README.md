@@ -1,6 +1,6 @@
 # Ress
 
-TODO: Write a gem description
+A Ruby DSL for writing CSS, inspired by LESS.
 
 ## Installation
 
@@ -18,7 +18,28 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+    body do                                       // body {
+      font_size 12.px                             //   font-size: 12px;
+      background_color :green                     //   background-color: green;
+      color rgba(255, 0, 0).lighten(10.percent)   //   color: rgb(255, 26, 26);
+                                                  // }
+                                                  //
+      s('.bar') do                                // body .foo {
+        cool_mixin :red, 150.percent              //   background-color: red;
+                                                  //   font-size: 150%;
+      end                                         // }
+                                                  //
+      +s('.foo') do                               // body.foo {
+        border_radius 1.em                        //   border-radius: 1em;
+                                                  //   -moz-border-radius: 1em;
+                                                  //   -webkit-border-radius: 1em;
+      end                                         // }
+    end                                           //
+
+    def cool_mixin color, size
+        background_color color
+        font_size size
+    end
 
 ## Contributing
 

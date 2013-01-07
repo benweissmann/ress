@@ -4,9 +4,9 @@ require File.expand_path('../lib/ress/version', __FILE__)
 Gem::Specification.new do |gem|
   gem.authors       = ["Ben Weissmann"]
   gem.email         = ["benweissmann@gmail.com"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
-  gem.homepage      = ""
+  gem.description   = %q{An elegant Ruby DSL for writing CSS.}
+  gem.summary       = %q{CSS in Ruby}
+  gem.homepage      = "https://github.com/benweissmann/ress"
 
   gem.files         = `git ls-files`.split($\)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
