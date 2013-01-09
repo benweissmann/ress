@@ -19,7 +19,8 @@ Or install it yourself as:
 ## Usage
 
 This is the eventual goal. `sample.ress` has a currently-valid RESS stylesheet;
-look there if you want to see the project's status.
+look there if you want to see the project's status. `sample.css` contains the
+compiled version of `sample.ress`.
 
     body do                                       // body {
       font_size 12.px                             //   font-size: 12px;
