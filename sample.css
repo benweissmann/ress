@@ -1,0 +1,13 @@
+body {
+  background-color: #ff0;
+}
+
+body.foo {
+  color: green;
+  asdf: 10;
+}
+
+body .bar {
+  border-radius: 10;
+  asdf: 20;
+}
