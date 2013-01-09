@@ -22,6 +22,8 @@ Or install it yourself as:
       font_size 12.px                             //   font-size: 12px;
       background_color :green                     //   background-color: green;
       color rgba(255, 0, 0).lighten(10.percent)   //   color: rgb(255, 26, 26);
+      border left: {width: 10, color: red}        //   border-left-width: 10px
+                                                  //   border-left-clor: red;
                                                   // }
                                                   //
       s('.bar') do                                // body .foo {
@@ -34,6 +36,10 @@ Or install it yourself as:
                                                   //   -moz-border-radius: 1em;
                                                   //   -webkit-border-radius: 1em;
       end                                         // }
+                                                  //
+      import "some_other_file.rass"               // imports some_other_file.rass,
+                                                  // nesting its rules inside this
+                                                  // selector block
     end                                           //
 
     def cool_mixin color, size
