@@ -18,6 +18,9 @@ Or install it yourself as:
 
 ## Usage
 
+This is the eventual goal. `sample.ress` has a currently-valid RESS stylesheet;
+look there if you want to see the project's status.
+
     body do                                       // body {
       font_size 12.px                             //   font-size: 12px;
       background_color :green                     //   background-color: green;

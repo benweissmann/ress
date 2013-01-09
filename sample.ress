@@ -1,12 +1,23 @@
+s('body') do
+  background_color "#ff0"
 
-body do
-    font_size 12.px
-    background_color :green
-    color rgba(255, 0, 0).lighten(10.percent)
+  mixin :foo do |n|
+    asdf n*2
+  end
 
-    +s('.foo') do // body.foo
+  +s('.foo') do
+    mixin :foo do |n|
+      asdf n
     end
 
-    s('.bar') do // body .bar
-    end
+    color 'green'
+
+    foo 10
+  end
+
+  s('.bar') do
+    border_radius 10
+
+    foo 10
+  end
 end
